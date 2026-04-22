@@ -20,3 +20,7 @@ def get_tasks():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+@app.post("/tasks")
+def create_task():
+    return {"message": "Task created"}

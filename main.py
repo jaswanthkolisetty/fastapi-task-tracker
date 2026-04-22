@@ -16,3 +16,7 @@ def get_tasks():
             {"id": 2, "title": "Push first commit", "done": False},
         ]
     }
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
